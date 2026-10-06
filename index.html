@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Student Study Planner</h1>
+    <p class="subtitle">Organize your studies and complete your tasks on time.</p>
+
+    <div class="form">
+        <input type="text" id="task" placeholder="Enter study task">
+        
+        <select id="subject">
+            <option value="">Select Subject</option>
+            <option>Network Theory</option>
+            <option>C Programming</option>
+            <option>Digital Electronics</option>
+            <option>Microcontroller</option>
+            <option>Web Development</option>
+        </select>
+
+        <select id="priority">
+            <option value="Normal">Normal</option>
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+        </select>
+
+        <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <div class="stats">
+        <div>Total: <span id="total">0</span></div>
+        <div>Completed: <span id="completed">0</span></div>
+        <div>Pending: <span id="pending">0</span></div>
+    </div>
+
+    <div id="taskList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
